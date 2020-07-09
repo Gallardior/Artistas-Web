@@ -15,9 +15,9 @@
   <header id="header">
 
     <nav class="menu">
-      <h1 class="menu__title">Artistas web</h1>
+      <h1 class="menu__title">Artistas Web</h1>
       <ul class="menu__list">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#" class="active">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Blog</a></li>
@@ -26,10 +26,14 @@
     </nav>
 
     <div class="hero">
-      <h2>Bienvenidos a Artistas Web</h2>
-      <hr>
-      <p>Agencia de Diseño y Desarrollo Web</p>
-      <a href="#" class="btn">Ver abajo</a>
+      <div class="hero__bg">
+        <div class="hero__card">
+          <h2>Bienvenidos Artistas Web</h2>
+          <hr>
+          <p>Agencia de Diseño y Desarrollo Web</p>
+          <a href="#" class="btn">Ver abajo</a>
+        </div>
+      </div>
     </div>
 
   </header>
@@ -37,16 +41,21 @@
   <main>
     <!-- About Us -->
     <section class="aboutUs">
-
-      <h2 class="aboutUs__title">Acerca de Nosotros</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis ab deleniti ipsa quaerat quisquam excepturi, fugit natus iure porro aliquid, voluptatem nobis nesciunt earum quam id consectetur optio consequatur alias recusandae dicta? Maxime laboriosam aliquid officiis sint ullam quibusdam earum culpa alias enim illo. Adipisci dolorem veniam quasi officia.</p>
-      <div class="aboutUs__gallery">
-        <img src="img/AboutUs/img-13.jpg">
-        <img src="img/AboutUs/img-17.jpg">
-        <img src="img/AboutUs/img-9.jpg">
+      <div class="infoContainer">
+        <h2 class="aboutUs__title">Acerca de Nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie in risus eget iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at ultricies lacus. Sed ut ornare mi, ac blandit nibh. Nulla sollicitudin lorem consequat, porta est ut, scelerisque risus. Morbi iaculis a sem quis iaculis. Sed facilisis turpis placerat, aliquam augue in, aliquet lectus.
+        </p>
+        <p>
+          Aliquam erat volutpat. Aliquam pellentesque velit ut neque consequat, id accumsan   estcursus. Ut ut leo at dolor molestie porta. Vestibulum ante ipsum primis in   faucibusorci luctus et ultrices posuere cubilia Curae; Integer auctor gravida quam  etfaucibus. Vivamus vel porttitor leo, ac ornare odio. Praesent finibus mi urna,   sedvehicula dolor bibendum vel.
+        </p>
+        <div class="aboutUs__gallery">
+          <div> <img src="img/AboutUs/img-13.jpg"> </div>
+          <div> <img src="img/AboutUs/img-17.jpg"> </div>
+          <div> <img src="img/AboutUs/img-9.jpg"> </div>
+        </div>
+        <a href="#" class="btn">Leer mas</a>
       </div>
-      <a href="#" class="btn">Leer mas</a>
-
     </section>
     <!-- Projects -->
     <section class="projects">
@@ -129,3 +138,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
 </body>
 </html>
+
