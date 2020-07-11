@@ -28,7 +28,7 @@ body
   position: fixed;
   top: 0;
   left: 0; 
-  border-bottom: 2px solid var(--red);
+  /* border-bottom: 1px solid var(--black); */
 }
   .menu__title
   {
@@ -277,7 +277,7 @@ body
   .testimony__card
   {
     position: relative;
-    width: 45%;
+    width: 40%;
     margin: 20px;
     text-align: center;
     color: var(--black);
@@ -368,7 +368,7 @@ body
   background: rgba(0,0,0, .9);
   margin: auto;
   border-radius: 3rem;
-  border: 2px solid var(--black);
+  border: 1px solid #FFF;
   padding: 40px 50px;
   text-align: center;
   color: var(--white);
@@ -424,7 +424,51 @@ body
 }
 
 
+/* Responsive Design ******************************* */
+.menu-icon
+{
+  display: none !important;
+}
 
+@media (max-width: 900px)
+{
+  .menu__list
+  {
+    position: absolute;
+    top: -900px;
+    right: 15%;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: #fff;
+    border: 1px solid var(--black);
+    border-radius: .5rem;
+    padding-left: 0;
+    transition: all .5s;
+    text-align: center;
+  }
+  .menu__list li
+  {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 0;
+    padding: 5px 15px;
+  }
+  .menu-icon
+  {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 .btn
