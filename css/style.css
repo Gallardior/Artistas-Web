@@ -5,7 +5,12 @@
   --blue:#08d9d6;
   --white: #eaeaea;
 }
+html
+{
+  scroll-behavior: smooth !important;
+}
 
+/* ::-webkit-scrollbar */
 body
 {
   background: #FFF;
@@ -48,16 +53,15 @@ body
       font-size: 16px;
       font-weight: 400;
       color: var(--black);
-      border-radius: 1rem;
       transition: 0.3s all;
+      border-bottom: 1px solid transparent;
 
       padding: 9px;
       margin-right: 25px;
     }
     .menu__list li a:hover
     {
-      background-color: var(--red);
-      color: var(--white);
+      opacity: .7;
     }
 
 /* HERO **********************************************************/
@@ -167,7 +171,6 @@ body
     object-fit: cover;
     width: 100%;
     height: 300px;
-    cursor: pointer;
   }
 
 /* PROJECTS************************************************************ */
@@ -238,6 +241,7 @@ body
     height: 320px;
     object-fit: cover;
     border-radius: 1rem;
+    cursor: pointer;
   }
 
 /* Testimony********************************************************* */
@@ -436,11 +440,13 @@ body
   {
     position: absolute;
     top: -900px;
-    right: 15%;
+    right: 0;
     opacity: .9;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
     background: #fff;
     border: 1px solid var(--black);
     border-radius: .5rem;
@@ -457,7 +463,7 @@ body
   }
   .menu-icon
   {
-    display: inline-block;
+    display: inline-block !important;
     margin-right: 20px;
     font-size: 20px;
     cursor: pointer;
@@ -470,6 +476,145 @@ body
   }
 }
 
+@media (max-width: 750px)
+{
+  .hero__card h2
+  {
+    font-size: 40px;
+  }
+
+  .aboutUs__title
+  {
+    font-size: 40px;
+  }
+
+  .aboutUs p
+  {
+    font-size: 15px;
+  }
+
+  .projects__title
+  {
+    width: 75%;
+    font-size: 35px;
+  }
+  .projects__gallery
+  {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .testimony__title
+  {
+    font-size: 40px;
+  }
+
+  .testimony__card
+  {
+    width: 100%;
+  }
+
+  .testimony__card span
+  {
+    font-size: 20px;
+  }
+
+  .testimony__card p 
+  {
+    font-size: 16px;
+  }
+
+  .contactUs__title
+  {
+    width: 60%;
+    font-size: 35px;
+  }
+  .contactUs__form
+  {
+    width: 75%;
+  }
+
+
+}
+
+@media (max-width: 550px)
+{
+  .hero__card h2
+  {
+    font-size: 30px;
+  }
+
+  .hero__card p
+  {
+    font-size: 15px;
+  }
+  .btn
+  {
+    font-size: 12px !important;
+  }
+
+  .aboutUs__title
+  {
+    font-size: 35px;
+  }
+
+  .aboutUs__gallery
+  {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .aboutUs__gallery div img
+  {
+    height: 100%;
+  }
+
+  .projects__title 
+  {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .projects__gallery 
+  {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .testimony__title 
+  {
+    font-size: 35px;
+  }
+
+  .testimony__cards 
+  {
+    margin: 30px auto;
+  }
+
+  .contactUs__title 
+  {
+    width: 70%;
+    font-size: 30px;
+  }
+
+  .contactUs__form 
+  {
+    width: 80%;
+  }
+  .contactUs__form label
+  {
+    font-size: 15px;
+  }
+
+  .footer
+  {
+    font-size: 15px;
+  }
+}
+
+
+
+/* CLASES UTILITARIAS */
 
 .btn
 {
@@ -491,7 +636,51 @@ body
 
 .active
 {
-  background-color: var(--red);
-  color: var(--white) !important;
-  font-weight: bold !important;
+  color: #000;
+  border-bottom: 1px solid var(--black) !important;
 }
+
+
+/* Skew EFECT */
+.skew-bottom
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 10vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.skew-top
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 10vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.skew-top-reverse
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 10vh 0 0 100vw;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.projects
+{
+  position: relative;
+}
+.contactUs
+{
+  position: relative;
+}
+
+
+/* SCROLLSPY */
+

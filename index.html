@@ -20,11 +20,11 @@
       <h1 class="menu__title">Artistas Web</h1>
       <i class="fa fa-bars menu-icon"></i>
       <ul class="menu__list">
-        <li><a href="#" class="active">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#header" class="active">Inicio</a></li>
+        <li><a href="#aboutUs">Nosotros</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#testimony">Testimonios</a></li>
+        <li><a href="#contactUs">Contacto</a></li>
       </ul>
     </nav>
 
@@ -38,12 +38,12 @@
         </div>
       </div>
     </div>
-
+    <div class="skew-bottom"></div>
   </header>
 
   <main>
     <!-- About Us -->
-    <section class="aboutUs">
+    <section class="aboutUs" id="aboutUs">
       <div class="infoContainer">
         <h2 class="aboutUs__title">Acerca de Nosotros</h2>
         <p>
@@ -61,7 +61,7 @@
       </div>
     </section>
     <!-- Projects -->
-    <section class="projects">
+    <section class="projects" id="projects"> 
 
       <div class="bg-hack--projects">
         <div class="projects__container">
@@ -80,10 +80,14 @@
           </div>
         </div>
       </div>
+      
+      <div class="skew-top"></div>
+      <div class="skew-bottom"></div>
 
     </section>
+    
     <!-- Testimony -->
-    <section class="testimony">
+    <section class="testimony" id="testimony">
 
       <h2 class="testimony__title">Testimonios</h2>
       <hr>
@@ -111,7 +115,7 @@
       </div>
     </section>
     <!-- ContactUs -->
-    <section class="contactUs">
+    <section class="contactUs" id="contactUs">
 
       <div class="bg-hack--form">
         <div class="contactUs__container">
@@ -129,12 +133,15 @@
           </form>
         </div>
       </div>
+
+      <div class="skew-top"></div>
+
     </section>
-    <!-- Footer -->
-    <footer class="footer">
-    &copy Artistas Web 2020 | All rights reserved
-    </footer>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+  &copy Artistas Web 2020 | All rights reserved
+  </footer>
 
   <!-- Scripts -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script> -->

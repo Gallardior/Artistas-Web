@@ -16,15 +16,21 @@ menuIcon.addEventListener("click", () => {
 
 });
 
-// Scroll Spy
+// Items del menu
 let menuList = document.querySelectorAll('.menu__list li a ')
 console.log(menuList);
 
-document.querySelector('.menu__list').addEventListener("click", () => {
-  menuList.forEach(element => {
-    element.addEventListener("click", () =>{
-      element.classList.toggle('active')
+menuList.forEach(element => {
+
+  element.addEventListener("click", () =>{
+
+    menuList.forEach(el => {
+      el.classList.remove('active')
     })
+    element.classList.toggle('active')
+
   })
 
 })
+
+// Scroll Spy
