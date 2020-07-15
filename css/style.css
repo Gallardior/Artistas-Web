@@ -682,5 +682,75 @@ body
 }
 
 
-/* SCROLLSPY */
+/* MODAL */
 
+.modal
+{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: .3s all;
+}
+
+.modal img
+{
+  display: block;
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
+  border: 1px solid var(--black);
+}
+
+.modal__btn
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+  display: inline-block !important;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+
+.modal__next, .modal__prev
+{
+  display: inline-block !important;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.modal__prev
+{
+  position: absolute;
+  top: 48%;
+  left: 5%;
+}
+
+.modal__next
+{
+  position: absolute;
+  top: 48%;
+  right: 5%;
+}

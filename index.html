@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
   <title>Web de Artistas</title>
 
   <!-- Styles -->
@@ -10,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
   <!-- HEADER -->
@@ -34,7 +34,7 @@
           <h2>Bienvenidos Artistas Web</h2>
           <hr>
           <p>Agencia de Diseño y Desarrollo Web</p>
-          <a href="#" class="btn">Ver abajo</a>
+          <a href="#contactUs" class="btn">Contactanos</a>
         </div>
       </div>
     </div>
@@ -53,11 +53,11 @@
           Aliquam erat volutpat. Aliquam pellentesque velit ut neque consequat, id accumsan   estcursus. Ut ut leo at dolor molestie porta. Vestibulum ante ipsum primis in   faucibusorci luctus et ultrices posuere cubilia Curae; Integer auctor gravida quam  etfaucibus. Vivamus vel porttitor leo, ac ornare odio. Praesent finibus mi urna,   sedvehicula dolor bibendum vel.
         </p>
         <div class="aboutUs__gallery">
-          <div> <img src="img/AboutUs/img-13.jpg"> </div>
-          <div> <img src="img/AboutUs/img-17.jpg"> </div>
-          <div> <img src="img/AboutUs/img-9.jpg"> </div>
+          <div> <img src="img/AboutUs/img-13.jpg" loading= lazy> </div>
+          <div> <img src="img/AboutUs/img-17.jpg" loading= lazy> </div>
+          <div> <img src="img/AboutUs/img-9.jpg" loading= lazy> </div>
         </div>
-        <a href="#" class="btn">Leer mas</a>
+        <!-- <a href="#" class="btn">Leer mas</a> -->
       </div>
     </section>
     <!-- Projects -->
@@ -67,16 +67,16 @@
         <div class="projects__container">
           <h2 class="projects__title">Nuestros Proyectos <hr></h2>
           <div class="projects__gallery">
-            <img src="img/Projects/theme-10.jpg">
-            <img src="img//Projects/theme-2.png">
-            <img src="img/Projects/theme-3.png">
-            <img src="img/Projects/theme-4.jpg">
-            <img src="img/Projects/theme-5.png">
-            <img src="img/Projects/theme-6.jpg">
-            <img src="img/Projects/theme-7.jpg">
-            <img src="img/Projects/theme-8.png">
-            <img src="img/Projects/theme-9.jpg">
-            <img src="img/Projects/theme-10.jpg">
+            <img src="img/Projects/theme-10.jpg" id="inicio" loading= lazy>
+            <img src="img//Projects/theme-2.png" loading= lazy>
+            <img src="img/Projects/theme-3.png" loading= lazy>
+            <img src="img/Projects/theme-4.jpg" loading= lazy>
+            <img src="img/Projects/theme-5.png" loading= lazy>
+            <img src="img/Projects/theme-6.jpg" loading= lazy>
+            <img src="img/Projects/theme-7.jpg" loading= lazy>
+            <img src="img/Projects/theme-8.png" loading= lazy>
+            <img src="img/Projects/theme-9.jpg" loading= lazy>
+            <img src="img/img-15.jpg" id="final">
           </div>
         </div>
       </div>
@@ -93,22 +93,22 @@
       <hr>
       <div class="testimony__cards">
         <div class="testimony__card">
-          <img src="img/Testimony/peaple-1.jpg">
+          <img src="img/Testimony/peaple-1.jpg" loading= lazy>
           <span>Amanta Castillo</span>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tellus quis orci tristique accumsan a quis tortor. Quisque ultricies diam vitae dolor varius, et molestie dolor faucibus."</p>
         </div>
         <div class="testimony__card">
-          <img src="img/Testimony/peaple-2.jpg">
+          <img src="img/Testimony/peaple-2.jpg" loading= lazy>
           <span>Clara Smilla</span>
           <p>"In a gravida enim. Ut nunc tortor, viverra et leo ut, mattis pretium velit. Phasellus vitae molestie tortor, blandit scelerisque tellus."</p>
         </div>
         <div class="testimony__card">
-          <img src="img/Testimony/peaple-3.jpg">
+          <img src="img/Testimony/peaple-3.jpg" loading= lazy>
           <span>Oscar Muñoz - Fundandor</span>
           <p>"Sed pulvinar neque semper quam ultricies placerat. Suspendisse id posuere diam, sit amet malesuada urna. Proin eleifend consectetur convallis. Nulla dignissim ut elit a faucibus. Sed luctus sagittis gravida. Vivamus ante leo, finibus a rutrum ac, sodales vitae nisi."</p>
         </div>
         <div class="testimony__card">
-          <img src="img/Testimony/peaple-4.jpg">
+          <img src="img/Testimony/peaple-4.jpg" loading= lazy>
           <span>Roberto Perez</span>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tellus quis orci tristique accumsan a quis tortor. Quisque ultricies diam vitae dolor varius, et molestie dolor faucibus."</p>
         </div>
@@ -143,8 +143,14 @@
   &copy Artistas Web 2020 | All rights reserved
   </footer>
 
+  <div class="modal" id="modal">
+    <i class="modal__btn fa fa-times"></i>
+    <i class="modal__next fa fa-arrow-right"></i>
+    <i class="modal__prev fa fa-arrow-left"></i>
+    <img  src="img/header.jpg">
+  </div>
   <!-- Scripts -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script> -->
+  <script src="js/vanillajs-scrollspy.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
